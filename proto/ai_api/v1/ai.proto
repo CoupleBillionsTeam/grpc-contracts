@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package ai.v1;
+
+option go_package = "/ai_api";
+
+message AiApiRequest{
+  int32 id = 1;
+}
+
+message AiApiResponse{
+  repeated int32 id_array = 1;
+}
+
+service AiApiService{
+  rpc GetIdFromAi(AiApiRequest) returns AiApiResponse;
+}
+
