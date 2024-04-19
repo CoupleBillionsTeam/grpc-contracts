@@ -13,6 +13,6 @@ message AiApiResponse{
 }
 
 service AiApiService{
-  rpc GetIdFromAi(AiApiRequest) returns AiApiResponse;
+  rpc GetIdFromAi(AiApiRequest) returns (AiApiResponse);
 }
 
