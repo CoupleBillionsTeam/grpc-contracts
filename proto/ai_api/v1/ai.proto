@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package ai.v1;
 
-option go_package = "https://github.com/CoupleBillionsTeam/grpc-contracts/blob/main/proto/ai_api/v1;ai_service";
+option go_package = "github.com/CoupleBillionsTeam/grpc-contracts/blob/main/proto/ai_api/v1;ai_service";
 
 message AiApiRequest{
   int32 id = 1;
